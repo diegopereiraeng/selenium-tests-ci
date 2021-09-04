@@ -1,1 +1,2 @@
-# selenium-tests-ci
+# Selenium + JUnit
+Selenium Junit
