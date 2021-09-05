@@ -31,7 +31,7 @@ public class DriverUtils1 {
             }
             ChromeOptions chromeOptions = new ChromeOptions();
             RemoteWebDriver remoteWebDriver = new RemoteWebDriver(new URL(seleniumServerURL), chromeOptions);
-            remoteWebDriver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+            //remoteWebDriver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
             return      remoteWebDriver;
         } catch (MalformedURLException e) {
             e.printStackTrace();

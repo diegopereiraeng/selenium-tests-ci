@@ -41,7 +41,7 @@ public class BankingAppTest {
         Options option= driver.manage();
         Window w=option.window();
         w.maximize();
-        option.timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        option.timeouts().implicitlyWait(120, TimeUnit.SECONDS);
     }
     
     @After
@@ -62,7 +62,7 @@ public class BankingAppTest {
     nav.to("http://34.121.70.58/diegopereiraeng/index.html");
     nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t?autoplay=1");
     try {
-       Thread.sleep(10000);
+       Thread.sleep(5000);
     } catch (InterruptedException e) {
        e.printStackTrace();
     }
