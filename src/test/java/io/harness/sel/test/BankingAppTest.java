@@ -83,8 +83,8 @@ public class BankingAppTest {
     @Test
     public void testBankingApp(){
 
-        driver.get("http://34.121.70.58/diegopereiraeng/index.html");
-        driver.get("http://34.121.70.58/diegopereiraeng/home_new.html");
+        driver.get("http://34.121.70.58/diegopereiraeng/dev/index.html");
+        driver.get("http://34.121.70.58/diegopereiraeng/dev/home_new.html");
 
     }
 }
