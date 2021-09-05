@@ -82,12 +82,10 @@ public class GoogleSearchTest {
 
     @Test
     public void testBankingApp(){
-        Navigation nav=driver.navigate();
 
-        nav.to("http://34.121.70.58/diegopereiraeng/index.html");
-        nav.to("http://34.121.70.58/diegopereiraeng/home_new.html");
-        nav.to("http://34.121.70.58/diegopereiraeng/images/qr-code-diegopereirareng.png");
-        nav.back();
-        nav.forward();
+        driver.get("http://34.121.70.58/diegopereiraeng/index.html");
+        driver.get("http://34.121.70.58/diegopereiraeng/home_new.html");
+        driver.get("http://34.121.70.58/diegopereiraeng/images/qr-code-diegopereirareng.png");
+
     }
 }
