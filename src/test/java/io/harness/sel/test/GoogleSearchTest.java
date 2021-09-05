@@ -70,14 +70,24 @@ public class GoogleSearchTest {
     }
     
    @Test
-public void testNavigation(){
-Navigation nav=driver.navigate();
+   public void testNavigation(){
+    Navigation nav=driver.navigate();
 
-nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t");
-nav.to("http://google.com");
-nav.to("https://www.youtube.com/watch?v=TA11m4KfpfE&t");
-nav.back();
-nav.forward();
+    nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t");
+    nav.to("http://google.com");
+    nav.to("https://www.youtube.com/watch?v=TA11m4KfpfE&t");
+    nav.back();
+    nav.forward();
+    }
 
+    @Test
+    public void testBankingApp(){
+        Navigation nav=driver.navigate();
 
-}}
+        nav.to("http://34.121.70.58/diegopereiraeng/index.html");
+        nav.to("http://34.121.70.58/diegopereiraeng/home_new.html");
+        nav.to("http://34.121.70.58/diegopereiraeng/images/qr-code-diegopereirareng.png");
+        nav.back();
+        nav.forward();
+    }
+}
