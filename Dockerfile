@@ -1,4 +1,6 @@
-FROM openjdk:13-ea-12-jdk-alpine
+MAINTAINER diegopereiraeng
+LABEL org.opencontainers.image.authors="diego.pereira@harness.io"
+FROM openjdk:13-ea-12-jdk-alpines
 USER root
 RUN   apk update \
   &&   apk add ca-certificates wget \
