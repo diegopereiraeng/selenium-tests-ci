@@ -46,7 +46,7 @@ public class BankingAppTest {
     
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
@@ -62,7 +62,7 @@ public class BankingAppTest {
     nav.to("http://34.121.70.58/diegopereiraeng/index.html");
     nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t?autoplay=1");
     try {
-       Thread.sleep(15000);
+       Thread.sleep(10000);
     } catch (InterruptedException e) {
        e.printStackTrace();
     }
