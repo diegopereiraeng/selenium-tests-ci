@@ -75,7 +75,7 @@ public class BankingAppTest {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         nav.to("http://google.com");
         nav.to("https://www.youtube.com/watch?v=TA11m4KfpfE&t?autoplay=1");
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         nav.back();
         nav.forward();
     }
