@@ -41,7 +41,7 @@ public class BankingAppTest {
         Options option= driver.manage();
         Window w=option.window();
         w.maximize();
-        option.timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+        option.timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     }
     
     @After
