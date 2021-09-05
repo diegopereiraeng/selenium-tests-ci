@@ -6,13 +6,7 @@
 package io.harness.sel.test;
 
 import io.harness.diegopereiraeng.junitselenium.DriverUtils1;
-import java.util.concurrent.TimeUnit;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Navigation;
@@ -20,13 +14,17 @@ import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.WebElement;
 
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertTrue;
+
 /**
  *
  * @author diegopereiraeng
  */
-public class GoogleSearchTest {
-    
-    public GoogleSearchTest() {
+public class BankingAppTest {
+
+    public BankingAppTest() {
     }
     
     @BeforeClass
@@ -56,26 +54,30 @@ public class GoogleSearchTest {
     }
 
     @Test
-    public void testGoogleSearch()
+    public void testBankingAppLogin()
     {
         
-        driver.get("https://www.google.com/");
-        By by=By.name("q");
-        driver.findElement(by);
-        WebElement e=driver.findElement(by);
-        e.sendKeys("Monica Stefanie");
-        e.submit();
-        String title=driver.getTitle();
-        assertTrue(title.contains("Monica Stefanie"));
+        driver.get("http://34.121.70.58/diegopereiraeng/index.html");
+
     }
     
    @Test
-   public void testNavigation(){
+   public void testBankingAppNavigation(){
     Navigation nav=driver.navigate();
-
-    nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t");
-    nav.to("http://google.com");
-    nav.to("https://www.youtube.com/watch?v=TA11m4KfpfE&t");
+    nav.to("http://34.121.70.58/diegopereiraeng/index.html");
+    nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t?autoplay=1");
+       try {
+           Thread.sleep(40000);
+       } catch (InterruptedException e) {
+           e.printStackTrace();
+       }
+       nav.to("http://34.121.70.58/diegopereiraeng/home_new.html");
+    nav.to("https://www.youtube.com/watch?v=TA11m4KfpfE&t?autoplay=1");
+       try {
+           Thread.sleep(40000);
+       } catch (InterruptedException e) {
+           e.printStackTrace();
+       }
     nav.back();
     nav.forward();
     }
