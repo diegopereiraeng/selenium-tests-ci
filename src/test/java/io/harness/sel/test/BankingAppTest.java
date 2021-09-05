@@ -37,15 +37,11 @@ public class BankingAppTest {
     WebDriver driver;
     @Before
     public void setUp() {
-        
-        
-        
-         driver = DriverUtils1.getChromeDriver();
+        driver = DriverUtils1.getChromeDriver();
         Options option= driver.manage();
         Window w=option.window();
         w.maximize();
         option.timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        
     }
     
     @After
@@ -56,7 +52,6 @@ public class BankingAppTest {
     @Test
     public void testBankingAppLogin()
     {
-        
         driver.get("http://34.121.70.58/diegopereiraeng/index.html");
 
     }
