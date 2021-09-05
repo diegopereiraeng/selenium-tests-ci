@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class DriverUtils1 {
     
-    public static WebDriver getChromeDriver(Integer Timeout){
+    public static WebDriver getChromeDriver(){
          System.setProperty("webdriver.chrome.driver", "/Users/diegopereira/Documents/Development/chromedriver");
         try {
             String seleniumServerURL = System.getenv("SELENIUM_SERVER_URL");

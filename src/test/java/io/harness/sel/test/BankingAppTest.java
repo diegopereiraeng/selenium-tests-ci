@@ -37,7 +37,7 @@ public class BankingAppTest {
     WebDriver driver;
     @Before
     public void setUp() {
-        driver = DriverUtils1.getChromeDriver(120);
+        driver = DriverUtils1.getChromeDriver();
         Options option= driver.manage();
         Window w=option.window();
         w.maximize();
