@@ -12,7 +12,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -30,9 +29,7 @@ public class DriverUtils1 {
                 seleniumServerURL = "http://34.136.12.142:4444/wd/hub";
             }
             ChromeOptions chromeOptions = new ChromeOptions();
-            RemoteWebDriver remoteWebDriver = new RemoteWebDriver(new URL(seleniumServerURL), chromeOptions);
-            //remoteWebDriver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-            return      remoteWebDriver;
+            return new RemoteWebDriver(new URL(seleniumServerURL), chromeOptions);
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return new ChromeDriver();
