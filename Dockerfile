@@ -1,4 +1,4 @@
-FROM openjdk:18-slim
+FROM openjdk:18-jdk-alpine3.13
 
 LABEL org.opencontainers.image.authors="diego.pereira@harness.io"
 LABEL maintainer="Douglas Quintanilha"
