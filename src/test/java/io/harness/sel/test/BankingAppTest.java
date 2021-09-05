@@ -56,26 +56,21 @@ public class BankingAppTest {
 
     }
     
-   @Test
-   public void testBankingAppNavigation(){
+    @Test
+    public void testBankingAppNavigation(){
     Navigation nav=driver.navigate();
     nav.to("http://34.121.70.58/diegopereiraeng/index.html");
     nav.to("https://www.youtube.com/watch?v=Ycu-KvC5HMY&t?autoplay=1");
-       try {
-           Thread.sleep(15000);
-       } catch (InterruptedException e) {
-           e.printStackTrace();
-       }
-       nav.to("http://34.121.70.58/diegopereiraeng/home_new.html");
+    try {
+       Thread.sleep(15000);
+    } catch (InterruptedException e) {
+       e.printStackTrace();
+    }
+    nav.to("http://34.121.70.58/diegopereiraeng/home_new.html");
     nav.to("https://www.youtube.com/watch?v=TA11m4KfpfE&t?autoplay=1");
-       try {
-           Thread.sleep(4000);
-       } catch (InterruptedException e) {
-           e.printStackTrace();
-       }
     nav.back();
     nav.forward();
-    }
+}
 
 
 

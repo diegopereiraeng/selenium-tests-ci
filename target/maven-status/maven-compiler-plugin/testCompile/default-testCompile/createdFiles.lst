@@ -1,11 +1,10 @@
+io/harness/sel/test/BankingAppTest.class
 io/harness/sel/test/TestCreateProfile.class
 io/harness/sel/test/SeleniumSearchTest.class
-io/harness/sel/test/FacebookTestJoe.class
 io/harness/sel/test/TestAtHome.class
 io/harness/sel/test/UserProfileTest.class
 io/harness/sel/test/RedfinTest.class
 io/harness/sel/test/FacebookTest.class
 io/harness/sel/test/UnderstandAnnotationTest.class
 io/harness/sel/test/GoogleSearchTest.class
-io/harness/sel/test/FacebookTestRohela.class
 io/harness/sel/test/FlightBookingTest.class
