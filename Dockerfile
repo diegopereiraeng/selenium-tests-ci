@@ -15,3 +15,4 @@ COPY ${JAR_FILE} app.jar
 
 #ENTRYPOINT ["java","-javaagent:/dd-java-agent.jar","-jar","/app.jar"] #Datadog
 ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 8080/tcp
