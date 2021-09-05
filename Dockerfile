@@ -3,6 +3,7 @@ USER root
 RUN   apk update \
   &&   apk add ca-certificates wget \
   &&   update-ca-certificates
+
 #RUN wget -O dd-java-agent.jar "https://dtdg.co/latest-java-tracer" #Datadog
 RUN addgroup -S spring && adduser -S spring -G spring
 #RUN chown spring:spring dd-java-agent.jar #Datadog
